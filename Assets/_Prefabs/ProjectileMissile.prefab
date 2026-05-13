@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 2913451714851747910}
   - component: {fileID: 4033238669837782294}
   - component: {fileID: -5394511137754918840}
+  - component: {fileID: 4025851138839128595}
   - component: {fileID: 3355580855545024725}
-  - component: {fileID: 6251227852571003271}
-  - component: {fileID: 3640201858663075519}
   m_Layer: 8
   m_Name: ProjectileMissile
   m_TagString: Untagged
@@ -85,6 +84,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
+--- !u!114 &4025851138839128595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7450530415250303830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98de0d3dd702ac34e899f61e2d831be2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileMissile
+  rigid: {fileID: 0}
+  _type: 0
 --- !u!114 &3355580855545024725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,39 +110,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1a8e3f849e734f8dbadc59249f453b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoundsCheck
-  boundsType: 0
-  radius: 1
-  keepOnScreen: 1
-  screenLocs: 0
-  camWidth: 0
-  camHeight: 0
---- !u!114 &6251227852571003271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7450530415250303830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4955930ab6734845b183a0d1b67dffb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ProjectileHero
-  rigid: {fileID: 0}
-  _type: 0
---- !u!114 &3640201858663075519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7450530415250303830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1a8e3f849e734f8dbadc59249f453b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoundsCheck
-  boundsType: 0
+  boundsType: 2
   radius: 1
   keepOnScreen: 0
   screenLocs: 0
